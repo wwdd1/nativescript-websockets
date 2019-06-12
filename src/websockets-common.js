@@ -89,7 +89,7 @@ module.exports = {Event: BrowserWebSocketsEvent};
  */
 var BrowserWebSockets = function(url, protocols) {
     var ws;
-    var WS = require("./websockets");
+    var WS = require("./websockets.ios");
     if (protocols === null || protocols === undefined) {
         ws =  new WS(url, {browser: true});
     } else {
